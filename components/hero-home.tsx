@@ -33,7 +33,7 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={300}
                 >
-                  Присоединяйся к Pro Сообществу сегодня!
+                  Присоединяйся к ИИшенка Pro Сообществу сегодня!
                 </p>
               </div>
             </div>
