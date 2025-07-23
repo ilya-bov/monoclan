@@ -15,7 +15,7 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="https:monoclan.ru/pro#pricing"
+                href="/pro#pricing"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
                 Вступить в Pro
