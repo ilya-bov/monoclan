@@ -114,13 +114,13 @@ export default function HeroHome() {
                   Месячная подписка
                 </div>
                 <div className="text-3xl font-bold mb-1">
-                  5 900 ₽ или 65 €{" "}
+                  5 990 ₽ или 65 €{" "}
                   <span className="text-base font-normal text-gray-500">
                     /мес
                   </span>
                 </div>
                 <div className="text-gray-400 line-through text-sm">
-                  Обычно 7 900 ₽ или 85 €
+                  Обычно 7 990 ₽ или 85 €
                 </div>
                 <div className="text-green-600 text-sm font-semibold">
                   17% скидка
@@ -134,13 +134,13 @@ export default function HeroHome() {
                   Годовая подписка
                 </div>
                 <div className="text-3xl font-bold mb-1">
-                  59 000 ₽ или 650 €{" "}
+                  59 900 ₽ или 650 €{" "}
                   <span className="text-base font-normal text-gray-500">
                     /год
                   </span>
                 </div>
                 <div className="text-gray-400 line-through text-sm">
-                  Обычно 79 000 ₽ или 850 €
+                  Обычно 79 900 ₽ или 850 €
                 </div>
                 <div className="text-green-600 text-sm font-semibold">
                   33% скидка
