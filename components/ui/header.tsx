@@ -15,10 +15,10 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="mailto:aiiszdes@google.com?subject=Моноклан&body=Как мы можем помочь?"
+                href="https:monoclan.ru/pro#pricing"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                Связаться с нами
+                Вступить в Pro
               </Link>
             </li>
           </ul>
