@@ -109,7 +109,7 @@ export default function HeroHome() {
               <span className="inline-block mb-2 px-3 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full w-max">
                 Скидка для ранних пользователей
               </span>
-              <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4">
+              <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4 h-full">
                 <div className="text-lg font-semibold mb-2">
                   Месячная подписка
                 </div>
@@ -126,7 +126,7 @@ export default function HeroHome() {
                   17% скидка
                 </div>
               </div>
-              <div className="bg-white rounded-xl border border-gray-200 p-6 relative">
+              <div className="bg-white rounded-xl border border-gray-200 p-6 relative ">
                 <div className="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">
                   ЛУЧШАЯ ЦЕНА
                 </div>
