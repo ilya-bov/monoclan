@@ -9,13 +9,6 @@ export default function Cta() {
           className="relative overflow-hidden rounded-2xl text-center shadow-xl before:pointer-events-none before:absolute before:inset-0 before:-z-10 before:rounded-2xl before:bg-gray-900"
           data-aos="zoom-y-out"
         >
-          {/* Glow */}
-          <div
-            className="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2 translate-y-1/2"
-            aria-hidden="true"
-          >
-            <div className="h-56 w-[480px] rounded-full border-[20px] border-blue-500 blur-3xl" />
-          </div>
           {/* Stripes illustration */}
           <div
             className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 transform"
@@ -33,18 +26,102 @@ export default function Cta() {
             <h2 className="mb-6 border-y text-3xl font-bold text-gray-200 [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-700/.7),transparent)1] md:mb-12 md:text-4xl">
               Присоединяйся к Pro-сообществу сегодня
             </h2>
-            <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
-              <a
-                className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="#pricing"
-              >
-                <span className="relative inline-flex items-center">
-                  Присоединиться{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
-                  </span>
+            {/* Pricing Section (light theme, Russian) */}
+            <div
+              id="pricing"
+              className="mt-12 flex flex-col md:flex-row gap-8 bg-gray-900/90 rounded-2xl shadow-xl p-8 md:p-12 max-w-5xl mx-auto border border-gray-700"
+            >
+              {/* Тарифы */}
+              <div className="flex-1 flex flex-col gap-6">
+                <span className="inline-block mb-2 px-3 py-1 text-xs font-semibold text-blue-200 bg-blue-900/60 rounded-full w-max">
+                  Скидка для ранних пользователей
                 </span>
-              </a>
+                <div className="bg-gray-800 rounded-xl border border-gray-700 p-6 mb-4 h-full">
+                  <div className="text-lg font-semibold mb-2 text-gray-100">
+                    Месячная подписка
+                  </div>
+                  <div className="text-3xl font-bold mb-1 text-white">
+                    5 990 ₽ или 65 €{" "}
+                    <span className="text-base font-normal text-gray-400">
+                      /мес
+                    </span>
+                  </div>
+                  <div className="text-gray-500 line-through text-sm">
+                    Обычно 7 990 ₽ или 85 €
+                  </div>
+                  <div className="text-green-400 text-sm font-semibold">
+                    17% скидка
+                  </div>
+                </div>
+                <div className="bg-gray-800 rounded-xl border border-gray-700 p-6 relative ">
+                  <span className="inline-block mb-2 px-3 py-1 text-xs font-semibold text-blue-200 bg-blue-900/60 rounded-full w-max">
+                    ЛУЧШАЯ ЦЕНА
+                  </span>
+                  <div className="text-lg font-semibold mb-2 text-gray-100">
+                    Годовая подписка
+                  </div>
+                  <div className="text-3xl font-bold mb-1 text-white">
+                    59 900 ₽ или 650 €{" "}
+                    <span className="text-base font-normal text-gray-400">
+                      /год
+                    </span>
+                  </div>
+                  <div className="text-gray-500 line-through text-sm">
+                    Обычно 79 900 ₽ или 850 €
+                  </div>
+                  <div className="text-green-400 text-sm font-semibold">
+                    33% скидка
+                  </div>
+                </div>
+              </div>
+              {/* Преимущества */}
+              <div className="flex-1 flex flex-col justify-between bg-gray-800 rounded-xl border border-gray-700 p-6 text-left">
+                <div>
+                  <div className="text-lg font-bold mb-4 text-gray-100 text-left">
+                    Что входит:
+                  </div>
+                  <ul className="space-y-3 mb-6 text-left">
+                    <li className="flex items-center gap-2 text-green-400">
+                      <span className="text-xl">✅</span> Доступ ко всем текущим
+                      и будущим материалам
+                    </li>
+                    <li className="flex items-center gap-2 text-green-400">
+                      <span className="text-xl">✅</span> Регулярно
+                      пополняющийся материал про ИИ
+                    </li>
+                    <li className="flex items-center gap-2 text-green-400">
+                      <span className="text-xl">✅</span> Приватное сообщество
+                    </li>
+                    <li className="flex items-center gap-2 text-green-400">
+                      <span className="text-xl">✅</span> Шаблоны и ресурсы для
+                      ИИ-агентов
+                    </li>
+                    <li className="flex items-center gap-2 text-yellow-400">
+                      <span className="text-xl">🎁</span> БОНУС — Эксклюзивные
+                      знания про ИИ-агентов
+                    </li>
+                    <li className="flex items-center gap-2 text-yellow-400">
+                      <span className="text-xl">🎁</span> БОНУС — Эксклюзивный
+                      нетворкинг
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  className="btn group mb-4 w-full bg-gradient-to-t from-blue-700 to-blue-500 text-white shadow-sm hover:from-blue-600 hover:to-blue-400 sm:mb-0 sm:w-auto"
+                  href="https://t.me/iishenka_pro_bot"
+                  target="blank"
+                >
+                  <span className="relative inline-flex items-center">
+                    Я с вами! Вступить в Pro{" "}
+                    <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
+                      -&gt;
+                    </span>
+                  </span>
+                </a>
+                <span className="text-sm font-normal text-gray-400 text-center">
+                  Вы будете перенаправлены в Телеграм-бота для вступления
+                </span>
+              </div>
             </div>
           </div>
         </div>

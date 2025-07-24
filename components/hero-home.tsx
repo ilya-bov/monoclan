@@ -42,8 +42,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Осваивай ИИ и опережай <br className="max-lg:hidden" />
-              коллег и конкурентов
+              Узнавай ИИ и опережай <br className="max-lg:hidden" />
+              конкурентов
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -99,98 +99,7 @@ export default function HeroHome() {
               </div>
             </div>
           </div>
-          {/* Pricing Section (light theme, Russian) */}
-          <div
-            id="pricing"
-            className="mt-12 flex flex-col md:flex-row gap-8 bg-white/90 rounded-2xl shadow-xl p-8 md:p-12 max-w-5xl mx-auto border border-gray-200"
-          >
-            {/* Тарифы */}
-            <div className="flex-1 flex flex-col gap-6">
-              <span className="inline-block mb-2 px-3 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full w-max">
-                Скидка для ранних пользователей
-              </span>
-              <div className="bg-white rounded-xl border border-gray-200 p-6 mb-4 h-full">
-                <div className="text-lg font-semibold mb-2">
-                  Месячная подписка
-                </div>
-                <div className="text-3xl font-bold mb-1">
-                  5 990 ₽ или 65 €{" "}
-                  <span className="text-base font-normal text-gray-500">
-                    /мес
-                  </span>
-                </div>
-                <div className="text-gray-400 line-through text-sm">
-                  Обычно 7 990 ₽ или 85 €
-                </div>
-                <div className="text-green-600 text-sm font-semibold">
-                  17% скидка
-                </div>
-              </div>
-              <div className="bg-white rounded-xl border border-gray-200 p-6 relative ">
-                <div className="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">
-                  ЛУЧШАЯ ЦЕНА
-                </div>
-                <div className="text-lg font-semibold mb-2">
-                  Годовая подписка
-                </div>
-                <div className="text-3xl font-bold mb-1">
-                  59 900 ₽ или 650 €{" "}
-                  <span className="text-base font-normal text-gray-500">
-                    /год
-                  </span>
-                </div>
-                <div className="text-gray-400 line-through text-sm">
-                  Обычно 79 900 ₽ или 850 €
-                </div>
-                <div className="text-green-600 text-sm font-semibold">
-                  33% скидка
-                </div>
-              </div>
-            </div>
-            {/* Преимущества */}
-            <div className="flex-1 flex flex-col justify-between bg-gray-50 rounded-xl border border-gray-200 p-6">
-              <div>
-                <div className="text-lg font-bold mb-4">Что входит:</div>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2 text-green-700">
-                    <span className="text-xl">✅</span> Доступ ко всем текущим и
-                    будущим материалам
-                  </li>
-                  <li className="flex items-center gap-2 text-green-700">
-                    <span className="text-xl">✅</span> Регулярно пополняющийся
-                    материал про ИИ
-                  </li>
-                  <li className="flex items-center gap-2 text-green-700">
-                    <span className="text-xl">✅</span> Приватное сообщество
-                  </li>
-                  <li className="flex items-center gap-2 text-green-700">
-                    <span className="text-xl">✅</span> Шаблоны и ресурсы для
-                    ИИ-агентов
-                  </li>
-                  <li className="flex items-center gap-2 text-yellow-600">
-                    <span className="text-xl">🎁</span> БОНУС — Эксклюзивные
-                    знания про ИИ-агентов
-                  </li>
-                  <li className="flex items-center gap-2 text-yellow-600">
-                    <span className="text-xl">🎁</span> БОНУС — Эксклюзивный
-                    нетворкинг
-                  </li>
-                </ul>
-              </div>
-              <a
-                className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                href="https://t.me/iishenka_pro_bot" target="blank"
-              >
-                <span className="relative inline-flex items-center">
-                  Я с вами! Вступить в Pro{" "}
-                  <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                    -&gt;
-                  </span>
-                </span>
-              </a>
-              <span className="text-sm font-normal text-gray-500 text-center">Вы будете перенаправлены в Телеграм-бота для вступления</span>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
