@@ -41,13 +41,13 @@ export default function Cta() {
                     Месячная подписка
                   </div>
                   <div className="text-3xl font-bold mb-1 text-white">
-                    5 990 ₽ или 65 €{" "}
+                    4 990 ₽ или 55 €{" "}
                     <span className="text-base font-normal text-gray-400">
                       /мес
                     </span>
                   </div>
                   <div className="text-gray-500 line-through text-sm">
-                    Обычно 7 990 ₽ или 85 €
+                    Обычно 6 990 ₽ или 75 €
                   </div>
                   <div className="text-green-400 text-sm font-semibold">
                     17% скидка
@@ -61,13 +61,13 @@ export default function Cta() {
                     Годовая подписка
                   </div>
                   <div className="text-3xl font-bold mb-1 text-white">
-                    59 900 ₽ или 650 €{" "}
+                    49 900 ₽ или 550 €{" "}
                     <span className="text-base font-normal text-gray-400">
                       /год
                     </span>
                   </div>
                   <div className="text-gray-500 line-through text-sm">
-                    Обычно 79 900 ₽ или 850 €
+                    Обычно 69 900 ₽ или 750 €
                   </div>
                   <div className="text-green-400 text-sm font-semibold">
                     33% скидка
