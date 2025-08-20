@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Моноклан",
+  title: "ИИшенка Pro",
   description: "Присоединяйся к революции искусственного интеллекта",
 };
 

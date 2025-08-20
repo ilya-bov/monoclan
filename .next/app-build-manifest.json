@@ -17,16 +17,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(default)/page.js"
     ],
-    "/pro/layout": [
+    "/group/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/pro/layout.css",
-      "static/chunks/app/pro/layout.js"
+      "static/css/app/group/layout.css",
+      "static/chunks/app/group/layout.js"
     ],
-    "/pro/page": [
+    "/group/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/pro/page.js"
+      "static/chunks/app/group/page.js"
     ]
   }
 }

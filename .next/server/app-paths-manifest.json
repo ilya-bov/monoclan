@@ -1,4 +1,4 @@
 {
-  "/pro/page": "app/pro/page.js",
-  "/(default)/page": "app/(default)/page.js"
+  "/(default)/page": "app/(default)/page.js",
+  "/group/page": "app/group/page.js"
 }

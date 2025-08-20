@@ -7,12 +7,22 @@ export default function Footer({ border = false }: { border?: boolean }) {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Top area: Blocks */}
         <div
-          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]" : ""}`}
+          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${
+            border
+              ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]"
+              : ""
+          }`}
         >
           {/* 1st block */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
             <div>
-              <Logo />
+              <p
+                className="font-bold text-xl"
+                data-aos="zoom-y-out"
+                data-aos-delay={150}
+              >
+                iishenka.pro
+              </p>
             </div>
             <div className="text-sm text-gray-600">
               Присоединяйтесь к нашему сообществу профессионалов и энтузиастов в
@@ -28,7 +38,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="https://www.youtube.com/channel/UCq_L4pHHIuWBW6OSKKxBbgw" target="_blank"
+                  href="https://www.youtube.com/channel/UCq_L4pHHIuWBW6OSKKxBbgw"
+                  target="_blank"
                 >
                   Ютуб канал
                 </Link>
@@ -36,7 +47,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="https://t.me/iishenka_pro_bot" target="_blank"
+                  href="https://t.me/iishenka_pro_bot"
+                  target="_blank"
                 >
                   Pro-Телеграм канал
                 </Link>
@@ -44,7 +56,8 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <li>
                 <Link
                   className="text-gray-600 transition hover:text-gray-900"
-                  href="https://t.me/+W1SnvvkcV6A3NWMy" target="_blank"
+                  href="https://t.me/+W1SnvvkcV6A3NWMy"
+                  target="_blank"
                 >
                   Бесплатный Телеграм канал
                 </Link>
