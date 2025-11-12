@@ -27,6 +27,17 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/group/page.js"
+    ],
+    "/n8n-masterclass/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/n8n-masterclass/layout.css",
+      "static/chunks/app/n8n-masterclass/layout.js"
+    ],
+    "/n8n-masterclass/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/n8n-masterclass/page.js"
     ]
   }
 }

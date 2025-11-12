@@ -41,7 +41,7 @@ export default function Cta() {
                     Месячная подписка
                   </div>
                   <div className="text-3xl font-bold mb-1 text-white">
-                    4 990 ₽ или 55 €{" "}
+                    5 990 ₽ или 65 €{" "}
                     <span className="text-base font-normal text-gray-400">
                       /мес
                     </span>
@@ -61,7 +61,7 @@ export default function Cta() {
                     Годовая подписка
                   </div>
                   <div className="text-3xl font-bold mb-1 text-white">
-                    49 900 ₽ или 550 €{" "}
+                    59 900 ₽ или 650 €{" "}
                     <span className="text-base font-normal text-gray-400">
                       /год
                     </span>
@@ -84,6 +84,9 @@ export default function Cta() {
                     <li className="flex items-center gap-2 text-green-400">
                       <span className="text-xl">✅</span> Доступ ко всем текущим
                       и будущим материалам
+                    </li>
+                    <li className="flex items-center gap-2 text-green-400">
+                      <span className="text-xl">✅</span> Уникальный мастер-класс по N8N для новичков
                     </li>
                     <li className="flex items-center gap-2 text-green-400">
                       <span className="text-xl">✅</span> Регулярно

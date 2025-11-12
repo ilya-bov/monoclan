@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
+import Link from "next/link";
 
 // Для Next.js используйте переменные окружения с префиксом NEXT_PUBLIC_
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
@@ -57,7 +58,6 @@ const llms = [
 export default function Features() {
   return (
     <section className="relative bg-white before:hidden">
-      
       {/* Course Curriculum Section */}
       <section className="relative bg-white py-12 md:py-20 border-t border-slate-100">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -72,7 +72,8 @@ export default function Features() {
               data-aos-delay={300}
             >
               Огромное количество материалов доступно сразу при вступлении в
-              сообщество. Ещё больше материалов будут выходить по мере готовности.
+              сообщество. Ещё больше материалов будут выходить по мере
+              готовности.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -158,44 +159,24 @@ export default function Features() {
               </div>
             </div>
             {/* Module 7 */}
-            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col">
+            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col col-span-1 sm:col-span-2 md:col-span-3 items-center">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-semibold bg-yellow-100 text-yellow-700 rounded px-2 py-0.5">
-                  Скоро
+                <span className="text-xs font-semibold bg-green-100 text-green-600 rounded px-2 py-0.5">
+                  Доступно при вступлении
                 </span>
               </div>
-              <div className="font-bold text-lg mb-1">n8n для новичков</div>
+              <div className="font-bold text-lg mb-1">⭐️ Мастер-класс n8n для новичков</div>
               <div className="text-gray-600 text-sm">
                 Изучите n8n с нуля и постройте свою первую автоматизацию.
               </div>
+              <Link
+                href="/n8n-masterclass"
+                className="text-blue-500 hover:text-blue-600 text-sm mt-2"
+              >
+                Подробнее
+              </Link>
             </div>
-            {/* Module 8 */}
-            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-semibold bg-yellow-100 text-yellow-700 rounded px-2 py-0.5">
-                  Скоро
-                </span>
-              </div>
-              <div className="font-bold text-lg mb-1">RAG для новичков</div>
-              <div className="text-gray-600 text-sm">
-                Узнайте основы и стратегии RAG, а также освойте векторые БД.
-              </div>
-            </div>
-            {/* Module 9 */}
-            <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-semibold bg-yellow-100 text-yellow-700 rounded px-2 py-0.5">
-                  Скоро
-                </span>
-              </div>
-              <div className="font-bold text-lg mb-1">
-                Локальные ИИ-автоматизации для новичков
-              </div>
-              <div className="text-gray-600 text-sm">
-                Узнайте, как развернуть автоматизации на собственном компьютере
-                по шагам.
-              </div>
-            </div>
+
             {/* Module 10 */}
             <div className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col col-span-1 sm:col-span-2 md:col-span-3 items-center">
               <div className="flex items-center gap-2 mb-2">
@@ -205,7 +186,8 @@ export default function Features() {
               </div>
               <div className="font-bold text-lg mb-1">Бонусные материалы</div>
               <div className="text-gray-600 text-sm text-center max-w-md">
-                Дополнительные гайды и техники для прокачки ваших AI-навыков от сообщества.
+                Дополнительные гайды и техники для прокачки ваших AI-навыков от
+                сообщества.
               </div>
             </div>
           </div>

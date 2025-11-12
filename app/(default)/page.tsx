@@ -54,7 +54,13 @@ export default function Home() {
             href="/group"
             className="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Pro ИИ сообщество
+            Pro-Cообщество
+          </a>
+          <a
+            href="/n8n-masterclass"
+            className="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            N8N Мастер-класс
           </a>
           <a
             href="mailto:aiiszdes@google.com?subject=ИИшенка Pro&body=Как мы можем помочь?"
