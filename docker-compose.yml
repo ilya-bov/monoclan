@@ -2,8 +2,16 @@ services:
   app:
     build: .
     container_name: pro-monoclan-app
-    ports:
-      - "3006:3000"
+    expose:
+      - "3000"
     environment:
       - NODE_ENV=production
     restart: unless-stopped
+    user: "node"
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    tmpfs:
+      - /tmp
