@@ -1,13 +1,23 @@
 FROM node:20-alpine AS builder
 WORKDIR /app
-COPY package.json package-lock.json ./
-RUN npm ci
+
+# Install pnpm
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
+# Copy package files
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+# Copy source code and build
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
+
+# Install pnpm in runner stage
+RUN corepack enable && corepack prepare pnpm@latest --activate
 
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
@@ -16,4 +26,4 @@ COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/next.config.js ./next.config.js
 
 USER node
-CMD ["npm", "start"]
+CMD ["pnpm", "start"]
