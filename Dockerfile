@@ -32,5 +32,5 @@ COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/next.config.js ./next.config.js
 
 USER node
-# Use node directly to run next start (no need for pnpm in runtime)
-CMD ["node", "node_modules/.bin/next", "start"]
+# Use node directly to run next start (use the actual binary path)
+CMD ["node", "node_modules/next/dist/bin/next", "start"]
