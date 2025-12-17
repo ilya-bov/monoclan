@@ -14,6 +14,8 @@ ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 # Copy package files
 COPY package.json pnpm-lock.yaml ./
+# Increase Node.js memory limit to avoid OOM (exit code 137)
+ENV NODE_OPTIONS="--max-old-space-size=2048"
 RUN pnpm install --frozen-lockfile
 
 # Copy source code and build
