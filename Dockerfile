@@ -24,9 +24,7 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 
-# Install pnpm in runner stage
-RUN corepack enable && corepack prepare pnpm@latest --activate
-
+# Copy built application
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
@@ -34,4 +32,5 @@ COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/next.config.js ./next.config.js
 
 USER node
-CMD ["pnpm", "start"]
+# Use node directly to run next start (no need for pnpm in runtime)
+CMD ["node", "node_modules/.bin/next", "start"]
